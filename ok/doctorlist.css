@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css?family=Viga'); */
+body{
+    background-color: rgb(15,15,15);
+    background-color: #28282B;
+}
+.headline{
+    display:flex;
+    font-size: 1.5rem;
+}
+.headline .fir{
+    width:50%;
+    text-align:right;
+    color:white;
+}
+.headline .sec{
+    width:50%;
+    color:#ff3c78;
+}
+
+
+
+
+
+.doctor-info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.doctor-box-1{
+    width: 85%;
+    margin: auto;
+    background-color: #28282B;
+    border:3px solid #28282B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+.doctor-box-1:hover{
+    border:3px solid #ff3c78;
+    /*box-shadow:0px 0px 0px 2px #ff3c78 inset;*/
+}
+.img-doc{
+    width: 100%;
+}
+.doc-info-writing{
+    margin-left:5%;
+}
+.heading-2{
+    /* font-family: 'Viga'; */
+    color: white;
+    
+}
+
+.heading-3{
+    /* font-family: 'Viga'; */
+    color: white;
+}
+.but{
+    background-color: #ff3c78;
+    border: none;
+    height:4vh;
+    width:30%;  
+}
+.but:hover{
+    background-color: #f86692;
+}

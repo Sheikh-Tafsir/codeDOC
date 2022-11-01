@@ -1,0 +1,164 @@
+*{
+	font-family: sans-serif;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color: #23242a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	/*flex-direction: column;
+	background: url("https://media.gettyimages.com/photos/superhero-picture-id1289851616");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	overflow: hidden;*/
+}
+.box{
+	position:relative;
+	width:34vw;
+	height:46vh;
+	background:#1c1c1c ;
+	border-radius: 10px;
+	overflow: hidden;
+	transform: scale(0.1);
+	transition:linear 0.5s
+}
+.box-tog{
+	transform: scale(1);
+	transition:linear 0.5s
+}
+.box::before{
+	content: '';
+	position: absolute;
+	top:-50%;
+	left:-35%;
+	width:30vw;
+	height:50vh;
+
+	background: linear-gradient(0deg,transparent, #df1f59 );
+	transform-origin:bottom right;
+	animation: animate 6s linear infinite;
+}
+.box::after{
+	content: '';
+	position: absolute;
+	top:-50%;
+	left:-35%;
+	width:30vw;
+	height:50vh;
+	background: linear-gradient(0deg,transparent, #df1f59 );
+	transform-origin:bottom right;
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+
+form {
+	position:absolute;
+	inset:2px;
+	/*width: 33vw;
+	height:45vh;*/
+	background:rgba(0,0,0,0.4);
+	background:#28292d;
+	border-radius: 10px;
+	text-align: center;
+	z-index: 10;
+}
+
+h2 {
+	margin-top:5vh;
+	text-align: center;
+	margin-bottom: 4vh;
+	color:white;
+}
+
+form input {
+	/*border: 2px solid #ccc;
+	width:80%;
+	height:5vh;
+	margin-bottom:2.5vh;
+	text-indent: 10px;
+	outline:none;
+	background-color: transparent;
+	border-bottom: 2px solid #ff3c78;*/
+	border: 0;
+    width:80%;
+	height:5vh;
+	margin-bottom:2.5vh;
+    padding:15px;
+    background:#28292d;
+    border-bottom: 1px solid #ff3c78;
+    outline:none;
+	color:white;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+form button {
+	background: #ff3c78;
+	height:5vh;
+	width:80%;
+	color:white;
+	border: none;
+	font-size:1em;
+	font-weight: bold;
+	transition: 0.1s linear;
+	margin-bottom: 1.5vh;
+}
+button:hover{
+	background:#df1f59;
+}
+.errorstat{
+	height:3vh;
+	width:80%;
+	margin:auto;
+	margin-bottom: 2vh;
+}
+.error {
+	color:red;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+/*a {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	opacity: .7;
+}*/
+form a{
+	color:white;
+}
+form a:hover{
+	color:#ff3c78;
+}

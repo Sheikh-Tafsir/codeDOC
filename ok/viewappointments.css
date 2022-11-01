@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(15,15,15);
+    background-color: #28282B;
+    color:white;
+}
+.headline{
+    display:flex;
+    font-size: 1.5rem;
+}
+.headline .fir{
+    width:50%;
+    text-align:right;
+    color:white;
+}
+.headline .sec{
+    width:50%;
+    color:#ff3c78;
+}
+.apointtable{
+    width:60%;
+    margin:auto;
+    
+    text-align:center;
+
+}
+.doctor-info{
+    /*display: grid;
+    grid-template-columns: repeat(4,1fr);*/
+}
+.doctor-box p{
+    display:inline;
+    margin-right:2vh;
+}
