@@ -7,7 +7,7 @@
 </head>
 <body onload="myFunction()">
 	<div class="box">
-		<form action="login.php" method="post">
+		<form action="logindoc.php" method="post">
 			<h2 >Login Here</h2>
 			
 			<!--<label>User Name</label>-->
@@ -22,11 +22,10 @@
 					<p class="error"><?php echo $_GET['error']; ?></p>
 				<?php } ?>
 			</div>
-			<a href="signup.php" class="gosignup" onclick="myFunction1()">Don't have an account?</a><br/>
-			<a href="indexdoc.php" class="gosignup" style='font-size:0.8em;margin-left:75%'>Login as Doctor?</a>
+			<a href="signup.php" class="gosignup" onclick="myFunction1()">Don't have an account?</a>
+			<a href="index.php" class="gosignup" style='font-size:0.8em;margin-left:75%'>Login as Patient?</a>
 		</form>
 	</div>
-
 	<script>
 		function myFunction(){
 			

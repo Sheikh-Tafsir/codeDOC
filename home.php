@@ -9,21 +9,21 @@ if (isset($_SESSION['user_name'])) {
 <head>
 	<title>HOME</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
-     <link rel="shortcut icon" href="images/logo.ico" />
-     <link
+    <link rel="shortcut icon" href="images/logo.ico" />
+    <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
             integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
-     />
+    />
 </head>
 <body>
      <a id="Home"></a>
         <div class="cov">
             <div class="header">
                 <div class="headlogo">
-                    <a href="https://sheikh-tafsir.github.io/octo-journey.github.io/"><img src="images/logo.png" height="75" width="200"></a>
+                    <a href="https://sheikh-tafsir.github.io/octo-journey.github.io/"><img src="images/code1.png" height="75" width="200"></a>
                 </div>
                 <div class="headbar">
                     <i class="fa-solid fa-xmark xmark" onclick="settmin()"></i>
@@ -50,6 +50,7 @@ if (isset($_SESSION['user_name'])) {
                 </div>
             </div>
         </div>
+
         <a id="services"></a>
         <div class="headline">
             <h1 class="fir">PROVIDED &nbsp;</h1>
@@ -62,20 +63,20 @@ if (isset($_SESSION['user_name'])) {
                     <img src="https://img.pikbest.com/png-images/20211011/tiny-programmers-upgrading-operation-system-of-computer_6142453.png!bw700" />
                     <h2>Book Appointment</h2>
                     <p> Book a room in your preferred slot and date depending on availability for a quiz or extra class.</p>
-                    <button><a href="/calender" class="srvclink">Book</a></button>
+                    <button><a href="doctorlist.php" class="srvclink">Book</a></button>
                 </div>
                 <div class="srvc" data-aos="fade-down">
                     <img src="https://www.pngfind.com/pngs/m/74-746223_notifications-vector-laundry-icon-png-transparent-png.png" />
                     <h2>Check Appoinments</h2>
                     <p>Manage your room bookings, change the timing or cancel the booking all together based on your requirement. </p>
-                    <button><a href="/checkbook" class="srvclink">Manage</a></button>
+                    <button><a href="viewappointments.php" class="srvclink">Manage</a></button>
                 </div>
                 
                 <div class="srvc" data-aos="fade-left">
                     <img src="https://www.pngitem.com/pimgs/m/157-1576399_learning-daily-routine-business-man-hd-png-download.png" />
                     <h2>View Profile</h2>
                     <p> Make your routine by giving the coursenames , courseteachers and other constraints! </p>
-                    <button><a href="#" class="srvclink">Let's Go</a></button>
+                    <button><a href="dash.php" class="srvclink">Let's Go</a></button>
                 </div>
             </div>
         </div>
@@ -92,7 +93,7 @@ if (isset($_SESSION['user_name'])) {
                 <p>mera rishta puraana. hai kya tadap,hai yeh kaisi saza tu kyun mujhe aaj yaad aa gaya bechain</p>
                 <p> din mere, bechain raat hai kya main karu kuchh bata yeh mere paanv hi khud<</p>
             </div>
-            <img src="images/p.jpg" alt="Girl in a jacket" width="500" height="450" class="abtImg">
+            <img src="images/image1.jpg" alt="Girl in a jacket" width="500" height="450" class="abtImg">
 
         </div>
         

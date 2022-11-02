@@ -2,7 +2,7 @@
 session_start(); 
 include "db_conn.php";
 
-		$sql = "SELECT * FROM users";
+		$sql = "SELECT * FROM doctorlist";
 
 		//echo phpinfo();
 		$result = mysqli_query($conn, $sql);

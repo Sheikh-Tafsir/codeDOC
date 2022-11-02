@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(15,15,15);
+    background-color: #28282B;
+    color:white;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+.backimg {
+    position:absolute;
+    z-index:-1;
+}
+.backimg img{
+    height:100vh;
+    width:100vw;
+}
+.headline{
+    display:flex;
+    font-size: 1.5rem;
+}
+.headline .fir{
+    width:50%;
+    text-align:right;
+    color:white;
+}
+.headline .sec{
+    width:50%;
+    color:#ff3c78;
+}
+.dash{
+    margin-left:40%;
+    font-size:1.4em;
+}

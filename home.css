@@ -3,7 +3,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(20,20,20);    
     margin:0;
     padding:0;
     font-family: 'Poppins', sans-serif;
@@ -301,7 +301,7 @@ body{
 .banner .motto h2{
     font-size: 3.8rem;
 }
-@media screen and (min-width: 991.1px) {
+@media screen and (min-width: 992px) {
     .banner .motto p{
         font-size: 1.2rem;
         -webkit-text-stroke:0.1px #FFF;
@@ -402,9 +402,10 @@ body{
 }
 .srvc{
     height: 70vh;
-    width:20vw;
+    width:21vw;
     /*background-color: white;*/
     border: 3px solid #ff3c78;
+    
     color:white;
     margin:0 2vw;
     border-radius: 12px;
@@ -431,14 +432,20 @@ body{
 .srvc p{
     width:85%;
     margin:auto;
-    margin-bottom:1rem;
+    margin-bottom:10%;
 }
 .srvc button{
     background-color: transparent;
     border:none;
+    border-bottom:1px solid transparent ;
     font-size:1rem;
     font-weight:bold;
-    width:6rem;
+    height:5%;
+    width:25%;
+    transition: linear 0.1s;
+}
+.srvc button:hover{
+    border-bottom:1px solid #ff3c78;
 }
 .srvclink{
     color:#ff3c78;

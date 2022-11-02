@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(15,15,15);
+    background-color: #28282B;
+    color:white;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+}
+.backimg {
+    position:absolute;
+    z-index:-1;
+}
+.backimg img{
+    height:100vh;
+    width:100vw;
+}
+.headline{
+    display:flex;
+    font-size: 1.5rem;
+    margin-bottom:5vh;
+    padding-top:vh;
+
+}
+.headline .fir{
+    width:45%;
+    text-align:right;
+    color:white;
+}
+.headline .sec{
+    width:55%;
+    color:#ff3c78;
+}
+.apointtable{
+    width:50%;
+    margin:auto;
+    font-size:1.5em;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.doctor-box{
+    display:flex;
+    background-color: rgb(63, 63, 69);
+    border:2px solid white;
+    margin-bottom:0.5vh;
+}
+.heading-1{
+    width:38%;
+    margin-left:3%;
+}
+.heading-2{
+    width:32%;
+    margin-left:3%;
+}
+.heading-3{
+    width:30%;
+    margin-left:3%;
+}
+
+/*-------------------scrollbar------------------------*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    background: transparent;
+}
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    
+    background: #fc6c97;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff3c78;
+  }
