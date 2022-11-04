@@ -1,11 +1,12 @@
 <h1 align="center">codeDOC</h1>
-<p align="center">
+<div align="center">
 
    [![GitHub Version](https://img.shields.io/github/release/Sheikh-Tafsir/codeDOC.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/releases) 
    [![Github Star](https://img.shields.io/github/stars/Sheikh-Tafsir/codeDOC.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/stargazers) 
    [![Github Fork](https://img.shields.io/github/forks/Sheikh-Tafsir/codeDOC.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/network/members) 
    [![License](https://img.shields.io/badge/license-hippocratic%20license-orange.svg?longCache=true&style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/blob/main/LICENSE)
-</p>
+   
+</div>
 
 ## Visuals
 
