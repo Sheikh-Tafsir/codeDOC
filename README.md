@@ -1,9 +1,10 @@
 <h1 align="center">codeDOC</h1>
 <p align="center">
-   <img src="https://img.shields.io/badge/language-PHP-blue?style"/>
-   <img src="https://img.shields.io/github/license/Sheikh-Tafsir/codeDOC"/>
-   <img src="https://img.shields.io/github/stars/Sheikh-Tafsir/codeDOC"/>
-   <img src="https://img.shields.io/github/forks/Sheikh-Tafsir/codeDOC"/>
+
+   [![GitHub Version](https://img.shields.io/github/release/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/releases) 
+   [![Github Star](https://img.shields.io/github/stars/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/stargazers) 
+   [![Github Fork](https://img.shields.io/github/forks/animate-css/animate.css.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/network/members) 
+   [![License](https://img.shields.io/badge/license-hippocratic%20license-orange.svg?longCache=true&style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/blob/main/LICENSE)
 </p>
 
 ## Visuals
@@ -45,14 +46,14 @@
     <tr>
       <td align="center">
         <a href="https://github.com/Sheikh-Tafsir">
-            <img src="https://avatars.githubusercontent.com/u/83116065?v=4" width="100px;" alt=""/>
+            <img src="https://avatars.githubusercontent.com/u/83116065?v=4" width="200px;" alt=""/>
             <br />
             <sub><b>Tafsir Rahman</b></sub>
         </a>
       </td>
       <td align="center">
         <a href="https://github.com/fateennavid-cse19">
-            <img src="https://avatars.githubusercontent.com/u/84742960?v=4" width="100px;" alt=""/>
+            <img src="https://avatars.githubusercontent.com/u/84742960?v=4" width="200px;" alt=""/>
             <br />
             <sub><b>Fateen Navid</b></sub>
         </a>
