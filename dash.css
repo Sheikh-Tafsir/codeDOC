@@ -1,19 +1,19 @@
 body{
-    background-color: rgb(15,15,15);
     background-color: #28282B;
+    background-color: rgb(236, 177, 187);
     color:white;
     margin:0;
     padding:0;
     overflow: hidden;
 }
-.backimg {
+/*.backimg {
     position:absolute;
     z-index:-1;
 }
 .backimg img{
     height:100vh;
     width:100vw;
-}
+}*/
 .headline{
     display:flex;
     font-size: 1.5rem;
@@ -30,4 +30,5 @@ body{
 .dash{
     margin-left:40%;
     font-size:1.4em;
+    color:black;
 }

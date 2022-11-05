@@ -24,9 +24,9 @@ include "db_conn.php";
 </head>
 <body>
     <div class="backimg">
-        <img src="https://cdn.wallpapersafari.com/48/45/e1ISRN.jpg">
-        <!--<img src="https://www.itl.cat/pngfile/big/289-2893409_dark-pink-wallpaper-black-and-pink-desktop-backgrounds.jpg">-->
-    </div>
+        <!--<img src="https://cdn.wallpapersafari.com/48/45/e1ISRN.jpg">
+        <img src="https://www.itl.cat/pngfile/big/289-2893409_dark-pink-wallpaper-black-and-pink-desktop-backgrounds.jpg">
+    </div>-->
     <div class="headline">
             <h1 class="fir">PERSONAL &nbsp;</h1>
             <h1 class="sec">INFORMATION</h1>

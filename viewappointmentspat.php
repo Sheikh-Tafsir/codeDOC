@@ -23,9 +23,21 @@ include "db_conn.php";
     <link rel="stylesheet" href="viewappointments.css">
 </head>
 <body>
-    <div class="backimg">
-        <img src="https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700346290.jpg">
-        <!--<img src="https://www.itl.cat/pngfile/big/289-2893409_dark-pink-wallpaper-black-and-pink-desktop-backgrounds.jpg">-->
+    <div class="header">
+                <div class="headlogo">
+                    <a href="https://sheikh-tafsir.github.io/octo-journey.github.io/"><img src="images/code1.png" height="75" width="200"></a>
+                </div>
+                <div class="headbar">
+                    <i class="fa-solid fa-xmark xmark" onclick="settmin()"></i>
+                    <i class="fa fa-bars bars" onclick="settmax()"></i>
+                </div>
+                <div class="headmenu">
+                    <a href="#">Home</a>
+                    <a href="#">Profile</a>
+                    <button class="logout"><a href="logout.php">Logout</a></button>
+                    <i class="fa-solid fa-sun light" onclick="settmode()"></i>
+                    <i class="fa-solid fa-moon dark" onclick="settmode()"></i>
+                </div>
     </div>
     <div class="headline">
             <h1 class="fir">BOOKED &nbsp;</h1>
@@ -34,15 +46,13 @@ include "db_conn.php";
     <div class="apointtable">
         <div class='doctor-box'>
             <p class='heading-1' style='font-weight:bold; color:#ff3c78'>Patient Name</p>
-            <p class='heading-2' style='font-weight:bold; color:#ff3c78'>Date</p>
-            <p class='heading-3' style='font-weight:bold; color:#ff3c78'>Time</p>
+            <p class='heading-2' style='font-weight:bold; color:#ff3c78'>Date-Time</p>
         </div>
         <?php 
             while ($row = $result->fetch_assoc()) {
                 echo "<div class='doctor-box'>";
-                //echo "<p class='heading-2'>". $row['id'] ."<p/>";
                 echo "<p class='heading-1'>". $row['patient_name'] ."<p/>";
-                //echo "<p class='heading-3'>". $row['patient_name']."<p/>";
+                echo "<p class='heading-1'>". $row['slot'] ."<p/>";
                 echo "</div>";
             }
 

@@ -1,20 +1,221 @@
 /* @import url('https://fonts.googleapis.com/css?family=Viga'); */
 body{
-    background-color: rgb(15,15,15);
+
     background-color: #28282B;
+    background-color: rgb(236, 177, 187);
     margin:0;
     padding:0;
+    color:black;
     overflow-x: hidden;
 }
-.backimg {
-    position:absolute;
-    z-index:-1;
+
+/*header*/
+@media screen and (min-width: 991.1px) {
+    .header{
+        display:flex;
+        width:100%;
+        position:fixed;
+        background:linear-gradient(90deg,transparent,black);
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        padding:1% 0 0 0;
+        z-index:1030;
+        height:8vh;
+    }
+    .header{
+        display:flex;
+        width:100%;
+        position:fixed;
+        background:linear-gradient(90deg,transparent,pink);
+        padding:1% 0 0 0;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    }
+    .headlogo{
+        width:20%;
+        padding-left: 5%;
+        
+    }
+    .headlogo img{
+        height:7vh;
+    }
+     .headbar{
+        width:5%;
+        visibility: hidden;
+        
+        
+    }
+    .headmenu{
+        width:70%;
+        
+        text-align:center;
+        padding:0.5vh;
+    }
+    .headmenu a{
+        text-decoration: none;
+        color:rgb(84, 82, 82);
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:0 20px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        position:relative;
+    }
+
+    .headmenu a:after{
+        content:"";
+        position:absolute;
+        display:block;
+        background-color: #ff3c78;
+        height:2px;
+        width:0;
+        left:0;
+        bottom:-10px;
+        transition: 0.3s;
+    }
+    .headmenu a:hover:after{
+        width:100%;
+    }
+    .headmenu a:hover{
+        color:white;
+    }
+    .logout{
+        background-color: #ff3c78;
+        color:white;
+        margin-right:2vw;
+        height:5.5vh;
+        border:none;
+        border-radius: 10px;        
+    }
+    .logout:hover{
+        background-color: #df1f59;
+    }
+    .logout a{
+        color:white;
+    }
+    .headmenu i{
+        color:rgb(84, 82, 82);
+        font-size:1.4rem;
+        position:absolute;
+        padding: 1.3vh 0;
+    }
+    .headmenu i:hover{
+        color:white;
+    }
+    .dark{
+        visibility: hidden;
+    }
 }
-.backimg img{
-    height:100vh;
-    width:100vw;
+@media screen and (max-width: 991px) {
+    .header{
+        width:100%;
+        padding:1% 0 0 0;
+    }
+    .headlogo{
+        position: fixed;
+        width:100%;
+        text-align:center;
+    }
+    .headlogo img{
+        width:350px;
+        height:130px;
+        z-index:9999;
+    }
+    .headbar{
+        position: fixed;
+        color:grey;
+        font-size:2rem;
+        transform: translate(50%,130%);
+    }
+    .bars:hover{
+        color:white;
+        font-size:2rem;;
+    }
+    .xmark{
+        transform: translate(170%,0);
+        visibility:hidden;
+    }
+    .xmark:hover{
+        color:white;
+        font-size:2rem;;
+    }
+    .headmenu{
+        position: fixed;
+        background:linear-gradient(90deg,transparent,black);
+        width:100%;
+        padding:200px 0;
+        transform: translate(100%,0);
+        transition: transform 0.6s;
+    }
+    .headmenu{
+        position: fixed;
+        background:linear-gradient(90deg,transparent,pink);
+        width:100%;
+        padding:200px 0;
+        transform: translate(100%,0);
+        transition: transform 0.6s;
+    }
+    .headmenu-ax{
+        width:100%;
+        padding:200px 0;
+        transform: translate(10%,0);
+        transition: transform 0.6s;
+    }
+    .headmenu a{
+        text-decoration: none;
+        text-align: left;
+        color:whitesmoke;
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:3%;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        display:block;
+        position:relative;
+        right:-50%;
+    }
+    .headmenu a{
+        text-decoration: none;
+        text-align: left;
+        color:black;
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:3%;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        display:block;
+        position:relative;
+        right:-50%;
+    }
+    .headmenu a:after{
+        content:"";
+        position:absolute;
+        display:block;
+        background-color: #ff3c78;
+        height:3px;
+        width:0;
+        left:0;
+        bottom:-0.1px;
+        transition: 0.3s;
+    }
+    .headmenu a:hover:after{
+        width:30%;
+    }
+    /*.headmenu a:hover{
+        color:white;
+    }*/
+    .headmenu i{
+        color:white;
+        font-size:1.4rem;
+        position:absolute;
+        padding: 2% 53%;
+    }
+    .dark{
+        visibility: hidden;
+    }
 }
+
+/*----------------doctorlist------------------*/
 .headline{
+    padding-top:10vh;
     display:flex;
     font-size: 1.5rem;
 }
@@ -36,39 +237,78 @@ body{
 
 .doctor-box-1{
     width: 85%;
-    height:48vh;
+    height:42vh;
     margin: auto;
-    background-color: #28282B;
-    border:3px solid #ff3c78;
+    background-color: rgb(236, 177, 187);
+    border:3px solid white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 5vh;
     overflow:hidden;
 }
 .doctor-box-1:hover{
-    border:3px solid white;
-    /*box-shadow:0px 0px 0px 2px #ff3c78 inset;*/
+    border:3px solid #ff3c78;
 }
 .img-doc{
     width: 100%;
-    height:62%;
+    height:65%;
 }
 .doc-info-writing{
-    margin-left:7%;
+    width:100%;
+    background-color: rgb(236, 177, 187);
+    transition: 0.2s linear;
+    transform: translate(0,-1.5vh);
+}
+.doctor-box-1:hover .doc-info-writing{
+    transform: translate(0,-24vh);
 }
 .heading-2{
     /* font-family: 'Viga'; */
-    margin-top:1vh;
-    color: white;
-    font-size:1.4em;
+    color: black;
+    font-size:1.6em;
     margin-bottom:0;
+    margin-left:3%;
     
 }
 
 .heading-3{
     /* font-family: 'Viga'; */
     margin-top:0;
-    color: white;
-    margin-bottom:0;
+    color: black;
+    margin-bottom:3.7vh;
+    margin-left:3%;
+}
+.heading-4{
+    margin-left:3%;
+    font-size:1.2em;
+}
+.calender{
+    display:flex;
+    flex-wrap: wrap;
+
+    margin:auto;
+    margin-bottom:1vh;
+    margin-top:-2vh;    
+}
+
+.calinp{
+    width:47%;
+    margin-bottom:0.5vh;
+    margin-bottom:0.5vh;
+    margin-right:0.1vw;
+    margin-left:0.3vw;
+    background-color: white;
+    border:1px solid #ff3c78;
+}
+.calinp:hover{
+    background-color: #f86692;
+}
+.slot{
+    cursor:pointer;
+    
+}
+.calender label{
+    
+    
 }
 
 .but{
@@ -77,11 +317,15 @@ body{
     height:4vh;
     width:30%;  
     margin-bottom:4vh;
+    margin-left:2%;
+    color:white;
+    transform: translateY(-0.5vh);
+    font-weight: bold;
 }
 .but:hover{
     background-color: #f86692;
+    cursor:pointer;
 }
-
 
 /*-------------------scrollbar------------------------*/
 ::-webkit-scrollbar {

@@ -57,9 +57,9 @@ if (isset($_SESSION['user_name'])) {
             <h1 class="sec">SERVICES</h1>
         </div>
 
-        <div class="place-bar">
-            <div class="srvcmenu" >
-                <div class="srvc">
+        <div class="place-bar" >
+            <div class="srvcmenu" class="animate__animated animate__lightSpeedInLeft">
+                <div class="srvc" >
                     <img src="https://img.pikbest.com/png-images/20211011/tiny-programmers-upgrading-operation-system-of-computer_6142453.png!bw700" />
                     <h2>Book Appointment</h2>
                     <p> Book a room in your preferred slot and date depending on availability for a quiz or extra class.</p>
