@@ -1,22 +1,230 @@
 body{
     background-color: #28282B;
     background-color: rgb(236, 177, 187);
+    background: url("images/dashback.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
     color:white;
     margin:0;
     padding:0;
     overflow: hidden;
+    font-family: 'Akaya Telivigala';
 }
-/*.backimg {
-    position:absolute;
-    z-index:-1;
+/*header*/
+@media screen and (min-width: 991.1px) {
+    .header{
+        display:flex;
+        width:100%;
+        position:fixed;
+        background:linear-gradient(90deg,transparent,black);
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        padding:1% 0 0 0;
+        z-index:1030;
+        height:8vh;
+        
+    }
+    .header{
+        display:flex;
+        width:100%;
+        position:fixed;
+        background:linear-gradient(90deg,transparent,pink);
+        background:rgba(250,193,200,0.8);
+        backdrop-filter: blur(2px);
+        padding:1% 0 0 0;
+        box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        font-family: 'Akshar';
+    }
+    .headlogo{
+        width:20%;
+        padding-left: 5%;
+        
+    }
+    .headlogo img{
+        height:7vh;
+    }
+     .headbar{
+        width:5%;
+        visibility: hidden;
+        
+        
+    }
+    .headmenu{
+        width:70%;
+        
+        text-align:center;
+        padding:0.5vh;
+    }
+    .headmenu a{
+        text-decoration: none;
+        color:rgb(84, 82, 82);
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:0 20px;
+        /*font-family: 'Poppins', sans-serif;*/
+        letter-spacing: 0.5px;
+        position:relative;
+    }
+
+    .headmenu a:after{
+        content:"";
+        position:absolute;
+        display:block;
+        background-color: #ff3c78;
+        height:2px;
+        width:0;
+        left:0;
+        bottom:-10px;
+        transition: 0.3s;
+    }
+    .headmenu a:hover:after{
+        width:100%;
+    }
+    .headmenu a:hover{
+        color:white;
+    }
+    .logout{
+        background-color: #ff3c78;
+        color:white;
+        margin-right:2vw;
+        height:5.5vh;
+        border:none;
+        border-radius: 10px;        
+    }
+    .logout:hover{
+        background-color: #df1f59;
+    }
+    .logout a{
+        color:white;
+    }
+    .headmenu i{
+        color:rgb(84, 82, 82);
+        font-size:1.4rem;
+        position:absolute;
+        padding: 1.3vh 0;
+    }
+    .headmenu i:hover{
+        color:white;
+    }
+    .dark{
+        visibility: hidden;
+    }
 }
-.backimg img{
-    height:100vh;
-    width:100vw;
-}*/
+@media screen and (max-width: 991px) {
+    .header{
+        width:100%;
+        padding:1% 0 0 0;
+        backdrop-filter: blur(2px);
+    }
+    .headlogo{
+        position: fixed;
+        width:100%;
+        text-align:center;
+    }
+    .headlogo img{
+        width:350px;
+        height:130px;
+        z-index:9999;
+    }
+    .headbar{
+        position: fixed;
+        color:grey;
+        font-size:2rem;
+        transform: translate(50%,130%);
+    }
+    .bars:hover{
+        color:white;
+        font-size:2rem;;
+    }
+    .xmark{
+        transform: translate(170%,0);
+        visibility:hidden;
+    }
+    .xmark:hover{
+        color:white;
+        font-size:2rem;;
+    }
+    .headmenu{
+        position: fixed;
+        background:linear-gradient(90deg,transparent,black);
+        width:100%;
+        padding:200px 0;
+        transform: translate(100%,0);
+        transition: transform 0.6s;
+    }
+    .headmenu{
+        position: fixed;
+        background:linear-gradient(90deg,transparent,pink);
+        width:100%;
+        padding:200px 0;
+        transform: translate(100%,0);
+        transition: transform 0.6s;
+    }
+    .headmenu-ax{
+        width:100%;
+        padding:200px 0;
+        transform: translate(10%,0);
+        transition: transform 0.6s;
+    }
+    .headmenu a{
+        text-decoration: none;
+        text-align: left;
+        color:whitesmoke;
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:3%;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        display:block;
+        position:relative;
+        right:-50%;
+    }
+    .headmenu a{
+        text-decoration: none;
+        text-align: left;
+        color:black;
+        font-size: 1.5rem;
+        font-weight:bold;
+        padding:3%;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 0.5px;
+        display:block;
+        position:relative;
+        right:-50%;
+    }
+    .headmenu a:after{
+        content:"";
+        position:absolute;
+        display:block;
+        background-color: #ff3c78;
+        height:3px;
+        width:0;
+        left:0;
+        bottom:-0.1px;
+        transition: 0.3s;
+    }
+    .headmenu a:hover:after{
+        width:30%;
+    }
+    /*.headmenu a:hover{
+        color:white;
+    }*/
+    .headmenu i{
+        color:white;
+        font-size:1.4rem;
+        position:absolute;
+        padding: 2% 53%;
+    }
+    .dark{
+        visibility: hidden;
+    }
+}
+
+
+/*------------------dash--------------------*/
 .headline{
     display:flex;
     font-size: 1.5rem;
+    padding-top:10vh;
 }
 .headline .fir{
     width:50%;
@@ -27,8 +235,53 @@ body{
     width:50%;
     color:#ff3c78;
 }
+
 .dash{
-    margin-left:40%;
-    font-size:1.4em;
-    color:black;
+    background-color: rgb(236, 177, 187);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    padding-left:2%;
+    padding-top:5vh;
+    width:26%;
+    height:55vh;
+    margin:auto;
+    font-size: 1.6em;
+    font-weight: 500;
+    color:white;
+    border-radius: 15px;
 }
+.dash h2{
+    text-align: center;
+    margin-left:-2%;
+    color:#df1f59;
+}
+.dash p{
+    display:inline;
+    line-height: 6vh;
+}
+.dashdoc{
+    background-color: rgb(236, 177, 187);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    padding-left:2%;
+    padding-top:5vh;
+    width:23%;
+    height:67vh;
+    margin:auto;
+    font-size: 1.4em;
+    font-weight: 500;
+    color:white;
+    border-radius: 15px;
+}
+.dashdoc h2{
+    text-align: center;
+    margin-left:-2%;
+    color:#df1f59;
+}
+.dashdoc p{
+    display:inline;
+    line-height: 6vh;
+}
+.heading-1{
+    color:#df1f59;
+    font-weight: 600;;
+}
+

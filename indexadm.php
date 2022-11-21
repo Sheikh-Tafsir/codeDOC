@@ -7,8 +7,8 @@
 </head>
 <body onload="myFunction()">
 	<div class="box">
-		<form action="logindoc.php" method="post">
-			<h2 >Doctor Login</h2>
+		<form action="loginadm.php" method="post">
+			<h2 >Admin Login</h2>
 			
 			<!--<label>User Name</label>-->
 			<input type="text" name="uname" placeholder="User Name"><br>
@@ -23,10 +23,11 @@
 				<?php } ?>
 			</div>
 			<a href="signup.php" class="gosignup" onclick="myFunction1()">Don't have an account?</a><br/>
-			<a href="indexadm.php" class="gosignup" style='font-size:0.8em;margin-right:19vw'>Login as Admin?</a>
-			<a href="index.php" class="gosignup" style='font-size:0.8em;'>Login as Patient?</a>
+			<a href="index.php" class="gosignup" style='font-size:0.8em;margin-right:19vw'>Login as Patient?</a>
+			<a href="indexdoc.php" class="gosignup" style='font-size:0.8em;'>Login as Doctor?</a>
 		</form>
 	</div>
+
 	<script>
 		function myFunction(){
 			

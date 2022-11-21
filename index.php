@@ -23,7 +23,8 @@
 				<?php } ?>
 			</div>
 			<a href="signup.php" class="gosignup" onclick="myFunction1()">Don't have an account?</a><br/>
-			<a href="indexdoc.php" class="gosignup" style='font-size:0.8em;margin-left:75%'>Login as Doctor?</a>
+			<a href="indexadm.php" class="gosignup" style='font-size:0.8em;margin-right:19vw'>Login as Admin?</a>
+			<a href="indexdoc.php" class="gosignup" style='font-size:0.8em;'>Login as Doctor?</a>
 		</form>
 	</div>
 

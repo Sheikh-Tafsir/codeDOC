@@ -21,15 +21,15 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
         header("Location: indexdoc.php?error=Password is required");
 	    exit();
 	}else{
-		$sql = "SELECT * FROM usersdoc WHERE user_name='$uname' AND password='$pass'";
+		$sql = "SELECT * FROM doctorlist WHERE name='$uname' AND password='$pass'";
 
 		//echo phpinfo();
 		$result = mysqli_query($conn, $sql);
 
 		if (mysqli_num_rows($result) === 1) {
 			$row = mysqli_fetch_assoc($result);
-            if ($row['user_name'] === $uname && $row['password'] === $pass) {
-            	$_SESSION['user_name'] = $row['user_name'];
+            if ($row['name'] === $uname && $row['password'] === $pass) {
+            	$_SESSION['name'] = $row['name'];
             	//$_SESSION['name'] = $row['name'];
             	//$_SESSION['id'] = $row['id'];
             	header("Location: viewappointmentspat.php");

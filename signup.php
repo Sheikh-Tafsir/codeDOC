@@ -14,6 +14,9 @@
 
 			<!--<label>User Name</label>-->
 			<input type="password" name="password" placeholder="Password"><br>
+			<input type="email" name="email" placeholder="Email"><br>
+			<input type="int" name="age" placeholder="Age"><br>
+			<input type="text" name="phoneno" placeholder="Phoneno"><br>
 
 			<button type="submit">Signup</button>
 			<div class="errorstat">

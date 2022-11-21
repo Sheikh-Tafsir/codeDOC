@@ -1,17 +1,30 @@
-/* @import url('https://fonts.googleapis.com/css?family=Viga'); */
 body{
-
     background-color: #28282B;
     background-color: rgb(236, 177, 187);
-
-    /*background-image: url("images/doctorlistback.png");
+    /*background-image: url("images/appointmentback.png");
     background-repeat: no-repeat;
-    background-size: 100vw 100vh;*/
+    background-size: 100vw 100vh;
+    background-position: center center;*/
+    color:white;
     margin:0;
     padding:0;
-    color:black;
     overflow-x: hidden;
-    font-family: 'Almendra SC';
+}
+
+body {
+    background-image: url("images/appointmentback.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+	
+   
+	/*flex-direction: column;
+	background: url("https://media.gettyimages.com/photos/superhero-picture-id1289851616");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	overflow: hidden;*/
 }
 
 /*header*/
@@ -25,7 +38,6 @@ body{
         padding:1% 0 0 0;
         z-index:1030;
         height:8vh;
-        font-family: 'Akshar';
     }
     .header{
         display:flex;
@@ -63,7 +75,7 @@ body{
         font-size: 1.5rem;
         font-weight:bold;
         padding:0 20px;
-        /*font-family: 'Poppins', sans-serif;*/
+        font-family: 'Poppins', sans-serif;
         letter-spacing: 0.5px;
         position:relative;
     }
@@ -175,7 +187,7 @@ body{
         font-size: 1.5rem;
         font-weight:bold;
         padding:3%;
-        /*font-family: 'Poppins', sans-serif;*/
+        font-family: 'Poppins', sans-serif;
         letter-spacing: 0.5px;
         display:block;
         position:relative;
@@ -188,7 +200,7 @@ body{
         font-size: 1.5rem;
         font-weight:bold;
         padding:3%;
-        /*font-family: 'Poppins', sans-serif;*/
+        font-family: 'Poppins', sans-serif;
         letter-spacing: 0.5px;
         display:block;
         position:relative;
@@ -222,162 +234,110 @@ body{
     }
 }
 
-/*----------------doctorlist------------------*/
-.background{
-    
-}
-.background img{
-    height:100vh;
-    width:100vw;
-    position:fixed;
-    z-index: -1;
-    
-}
-.headline{
-    padding-top:10vh;
-    display:flex;
-    font-size: 1.5rem;
-}
-.headline .fir{
-    width:50%;
-    text-align:right;
-    color:white;
-}
-.headline .sec{
-    width:50%;
-    color:#ff3c78;
+/*-----------------add doctor------------------------*/
+.box{
+	position:relative;
+	width:34vw;
+	height:85vh;
+    top:12vh;
+    left:35vw;
+	background:#1c1c1c ;
+    background: rgb(236, 177, 187);
+	border-radius: 10px;
+	overflow: hidden;
+	
 }
 
-
-.doctor-info{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+form {
+	position:absolute;
+	inset:2px;
+	/*width: 33vw;
+	height:45vh;*/
+	background:rgba(0,0,0,0.4);
+	background:#28292d;
+    background:rgb(236, 177, 187);
+	border-radius: 10px;
+	text-align: center;
+	z-index: 10;
 }
 
-.doctor-box-1{
-    width: 85%;
-    height:42vh;
-    height:54vh;
-    margin: auto;
-    background-color: rgb(236, 177, 187);
-    border:3px solid white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 5vh;
-    overflow:hidden;
-}
-.doctor-box-1:hover{
-    border:3px solid #ff3c78;
-}
-.img-doc{
-    width: 100%;
-    height:65%;
-}
-.doc-info-writing{
-    width:100%;
-    background-color: rgb(236, 177, 187);
-    transition: 0.2s linear;
-    transform: translate(0,-1.5vh);
-}
-.doctor-box-1:hover .doc-info-writing{
-    transform: translate(0,-24vh);
-    transform: translate(0,-32vh);
-}
-.heading-2{
-    /* font-family: 'Viga'; */
-    color: black;
-    font-size:1.6em;
-    margin-bottom:0;
-    margin-left:6%;
-    
+h2 {
+	margin-top:2vh;
+	text-align: center;
+	margin-bottom: 2vh;
+	color:white;
 }
 
-.heading-3{
-    /* font-family: 'Viga'; */
-    margin-top:0;
-    color: black;
-    margin-bottom:3.7vh;
-    margin-left:6%;
-}
-.heading-4{
-    margin-left:6%;
-    font-size:1.2em;
-}
-.calender{
-    /*display:flex;
-    flex-wrap: wrap;*/
-    margin:auto;
-    margin-bottom:1vh;
-    margin-top:-2vh;    
-}
-
-.calinp{
+form input {
+	/*border: 2px solid #ccc;
+	width:80%;
+	height:5vh;
+	margin-bottom:2.5vh;
+	text-indent: 10px;
+	outline:none;
+	background-color: transparent;
+	border-bottom: 2px solid #ff3c78;*/
+	border: 0;
     width:80%;
-    margin-bottom:0.5vh;
-    margin-bottom:0.5vh;
-    margin-right:0.1vw;
-    margin-left:6%;
-    background-color: white;
-    border:1px solid #ff3c78;
+	height:2vh;
+    margin-bottom: 1vh;
+    padding:15px;
+    background:transparent;
+    border-bottom: 1px solid #ff3c78;
+    outline:none;
+	color:white;
 }
-.calinp:hover{
-    background-color: #f86692;
-}
-.slot{
-    cursor:pointer;
-    
-}
-.calender label{
-    
-    
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
 }
 
-.but{
-    background-color: #ff3c78;
-    border: none;
-    height:4vh;
-    width:30%;  
-    margin-bottom:3vh;
-    margin-top:1vh;
-    margin-left:6%;
-    color:white;
-    transform: translateY(-0.5vh);
-    font-weight: bold;
+form button {
+	background: #ff3c78;
+	height:5vh;
+	width:80%;
+	color:white;
+	border: none;
+	font-size:1em;
+	font-weight: bold;
+	transition: 0.1s linear;
+	margin-bottom: 1.5vh;
 }
-.but:hover{
-    background-color: #f86692;
-    cursor:pointer;
+button:hover{
+	background:#df1f59;
 }
-
 .errorstat{
 	height:3vh;
 	width:80%;
 	margin:auto;
-	margin-bottom: 4vh;
-    text-align: center;
-    font-size: 1.5em;
+	margin-bottom: 2vh;
 }
 .error {
 	color:red;
 }
 
-/*-------------------scrollbar------------------------*/
-::-webkit-scrollbar {
-    width: 10px;
+h1 {
+	text-align: center;
+	color: #fff;
 }
- 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    background: transparent;
+
+/*a {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
 }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    
-    background: #fc6c97;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ff3c78;
-  }
+a:hover{
+	opacity: .7;
+}*/
+form a{
+	color:white;
+}
+form a:hover{
+	color:#ff3c78;
+}

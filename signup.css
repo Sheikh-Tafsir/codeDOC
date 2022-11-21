@@ -23,7 +23,7 @@ body {
 .box{
 	position:relative;
 	width:34vw;
-	height:46vh;
+	height:68vh;
 	background:#1c1c1c ;
 	border-radius: 10px;
 	overflow: hidden;
@@ -40,7 +40,7 @@ body {
 	top:-50%;
 	left:-35%;
 	width:30vw;
-	height:50vh;
+	height:60vh;
 
 	background: linear-gradient(0deg,transparent, #df1f59 );
 	transform-origin:bottom right;
@@ -52,7 +52,7 @@ body {
 	top:-50%;
 	left:-35%;
 	width:30vw;
-	height:50vh;
+	height:60vh;
 	background: linear-gradient(0deg,transparent, #df1f59 );
 	transform-origin:bottom right;
 	animation: animate 6s linear infinite;

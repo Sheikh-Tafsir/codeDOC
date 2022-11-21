@@ -21,13 +21,16 @@ include "db_conn.php";
     <link rel="shortcut icon" href="images/logo.ico" />
     <title>Doctor List</title>
     <link rel="stylesheet" href="doctorlist.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
+    
 </head>
 <body>
-    <!--<div class="backimg">
-        <img src="https://cdn.wallpapersafari.com/75/16/l7DFxK.jpg">
-        
-    </div>-->
-    <div class="header">
+    <div class='background'>
+        <img src="images/doctorlistback.png">
+    </div>
+    <div class="header" data-aos='fade-down'>
                 <div class="headlogo">
                     <a href="https://sheikh-tafsir.github.io/octo-journey.github.io/"><img src="images/code1.png" height="75" width="200"></a>
                 </div>
@@ -37,8 +40,8 @@ include "db_conn.php";
                 </div>
                 <div class="headmenu">
                     <a href="home.php">Home</a>
-                    <a href="viewappointments.php">Appointments</a>
-                    <a href="dash.php">Profile</a>
+                    <a href="viewappointmentsdoc.php">Appointments</a>
+                    <a href="dashpat.php">Profile</a>
                     <button class="logout"><a href="logout.php">Logout</a></button>
                     <i class="fa-solid fa-sun light" onclick="settmode()"></i>
                     <i class="fa-solid fa-moon dark" onclick="settmode()"></i>
@@ -48,9 +51,17 @@ include "db_conn.php";
             <h1 class="fir">DOCTOR &nbsp;</h1>
             <h1 class="sec">INFORMATION</h1>
     </div>
+
+    <div class="errorstat">
+		<?php if (isset($_GET['error'])) { ?>
+			<p class="error"><?php echo $_GET['error']; ?></p>
+		<?php } ?>
+	</div>
+
     <div class="doctor-info">
         
         <?php 
+
             $presdate=date(DATE_RFC822);
             $presdate=strval($presdate);
             $presday=substr($presdate,0,3);
@@ -120,13 +131,13 @@ include "db_conn.php";
                 $r6=date("d-m-Y", strtotime("+6 day"));
                 $r7=date("d-m-Y", strtotime("+0 day"));
             }
-            $r1=substr($r1,0,5);
-            $r2=substr($r2,0,5);
-            $r3=substr($r3,0,5);
-            $r4=substr($r4,0,5);
-            $r5=substr($r5,0,5);
-            $r6=substr($r6,0,5);
-            $r7=substr($r7,0,5);
+            $r1=substr($r1,0,10);
+            $r2=substr($r2,0,10);
+            $r3=substr($r3,0,10);
+            $r4=substr($r4,0,10);
+            $r5=substr($r5,0,10);
+            $r6=substr($r6,0,10);
+            $r7=substr($r7,0,10);
             while ($row = $result->fetch_assoc()) {
                     $x=$row['name'];
                     $y=$_SESSION['user_name'];
@@ -137,8 +148,29 @@ include "db_conn.php";
                     $s5=strval($row['wed']." ".$r5);
                     $s6=strval($row['thu']." ".$r6);
                     $s7=strval($row['fri']." ".$r7);
+                    {
+                        strlen($s1)<15?$s1="unavailable": $s1= strval($s1." Saturday");
+                    }
+                    {
+                        strlen($s2)<15?$s2="unavailable": $s2=strval($s2." Sunday");
+                    }
+                    {
+                        strlen($s3)<15?$s3="unavailable": $s3= strval($s3." Monday");
+                    }
+                    {
+                        strlen($s4)<15?$s4="unavailable": $s4= strval($s4." Tuesday");
+                    }
+                    {
+                        strlen($s5)<15?$s5="unavailable": $s5= strval($s5." Wednesday");
+                    }
+                    {
+                        strlen($s6)<15?$s6="unavailable": $s6= strval($s6." Thursday");
+                    }
+                    {
+                        strlen($s7)<15? $s7="unavailable": $s7=strval($s7." Friday");
+                    }
                     //$_SESSION['appoint_doctor_name'] = $row['user_name'];
-                    echo "<div class='doctor-box-1'>";
+                    echo "<div class='doctor-box-1' data-aos='zoom-in'>";
                     echo "<img class= 'img-doc' src='images/image1.jpg' alt='doctor-1'>";
                     echo "<div class='doc-info-writing'>";
                     echo "<h3 class='heading-2'>". $row['name']."<h3/>";
@@ -157,7 +189,8 @@ include "db_conn.php";
                     echo "</div>";*/
                     echo "<div class='calender'>";
                     echo "<div class='calinp'>";
-                    echo "<input type='radio' class='slot' name='slot' value='$s1'>";
+                    //setcookie("MyCookie", strlen($s1));
+                    echo "<input type='radio' class='slot' name='slot' value='$s1' >";
                     echo "<label>". $s1."</label>";
                     echo "</div>";
                     echo "<div class='calinp'>";
@@ -203,9 +236,23 @@ include "db_conn.php";
 </body>
 <script>
     function makeLarge(){
-        //alert("hello");
+        /*alert("hi");
+        var cookies = document.cookie.split(";").
+        map(function(el){ return el.split("="); }).
+        reduce(function(prev,cur){ prev[cur[0]] = cur[1]; return prev },{});
+        alert(cookies["MyCookie"]);*/
+
 
 
     }
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease',
+        once: true,
+        anchorPlacement: 'middle-bottom',
+    });
 </script>
 </html>

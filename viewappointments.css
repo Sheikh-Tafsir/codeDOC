@@ -1,10 +1,16 @@
 body{
     background-color: #28282B;
     background-color: rgb(236, 177, 187);
+    background-color: red;
+    /*background-image: url("images/appointmentback.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-position: center center;*/
     color:white;
     margin:0;
     padding:0;
     overflow-x: hidden;
+    font-family: 'Akaya Telivigala';
 }
 
 /*header*/
@@ -18,14 +24,18 @@ body{
         padding:1% 0 0 0;
         z-index:1030;
         height:8vh;
+        font-family: 'Akshar';
     }
     .header{
         display:flex;
         width:100%;
         position:fixed;
         background:linear-gradient(90deg,transparent,pink);
+        background:rgba(250,193,200,0.8);
+        backdrop-filter: blur(4px);
         padding:1% 0 0 0;
         box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+        font-family: 'Akshar';
     }
     .headlogo{
         width:20%;
@@ -53,7 +63,7 @@ body{
         font-size: 1.5rem;
         font-weight:bold;
         padding:0 20px;
-        font-family: 'Poppins', sans-serif;
+        /*font-family: 'Poppins', sans-serif;*/
         letter-spacing: 0.5px;
         position:relative;
     }
@@ -106,6 +116,7 @@ body{
     .header{
         width:100%;
         padding:1% 0 0 0;
+        backdrop-filter: blur(2px);
     }
     .headlogo{
         position: fixed;
@@ -211,7 +222,19 @@ body{
     }
 }
 
+
+
 /*----------------appointmentList------------------*/
+.background{
+    
+}
+.background img{
+    height:100vh;
+    width:100vw;
+    position:fixed;
+    z-index: -1;
+    
+}
 .headline{
     display:flex;
     font-size: 1.5rem;
@@ -232,7 +255,12 @@ body{
     width:60%;
     margin:auto;
     font-size:1.5em;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.doctorlisttable{
+    width:70%;
+    margin:auto;
+    font-size:1.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .doctor-box{
