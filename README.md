@@ -1,11 +1,9 @@
 <h1 align="center">codeDOC</h1>
 <div align="center">
 
-► [Subscribe Us:](https://www.youtube.com/codingwithelias?sub_confirmation=1)
-   [![GitHub Version](https://img.shields.io/github/release/Sheikh-Tafsir/codeDOC.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/releases) 
    [![Github Star](https://img.shields.io/github/stars/Sheikh-Tafsir/codeDOC.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/stargazers) 
    [![Github Fork](https://img.shields.io/github/forks/Sheikh-Tafsir/codeDOC.svg?style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/network/members) 
-   [![License](https://img.shields.io/badge/license-hippocratic%20license-orange.svg?longCache=true&style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/blob/main/LICENSE)
+   [![License](https://img.shields.io/badge/license-MIT%20license-orange.svg?longCache=true&style=for-the-badge)](https://github.com/Sheikh-Tafsir/codeDOC/blob/main/LICENSE)
 
 </div>
 
@@ -16,6 +14,7 @@
 
 ### Homepage
 ![image](https://user-images.githubusercontent.com/83116065/199514289-32c19e8f-3b6a-4cfe-a874-eead07572294.png)
+<br/>
 ![image](https://user-images.githubusercontent.com/83116065/203370865-aff589c0-0748-45c9-a302-6629d37783f6.png)
 
 
