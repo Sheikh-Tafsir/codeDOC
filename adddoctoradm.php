@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SIGNUP</title>
+	<title>Add Doctor</title>
 	<link rel="stylesheet" type="text/css" href="adddoctoradm.css">
 </head>
 <body>
@@ -39,6 +39,7 @@
             <input type="text" name="wed" placeholder="Wednesday slot time"><br>
             <input type="text" name="thu" placeholder="Thursday slot time"><br>
             <input type="text" name="fri" placeholder="Friday slot time"><br>
+			<input type="text" name="patlimit" placeholder="patiend limit"><br>
 
 			<button type="submit">Save</button>
 			<div class="errorstat">

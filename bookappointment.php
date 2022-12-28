@@ -49,6 +49,15 @@ if (isset($_POST['pname']) && isset($_POST['dname']) && isset($_POST['slot'])) {
 			$result = mysqli_query($conn, $sql);
 			$pcount=mysqli_num_rows($result) +1;
 
+			$sql = "SELECT patlimit FROM doctorlist WHERE name='$dname' ";
+			$result = mysqli_query($conn, $sql);
+			$plimit=mysqli_fetch_assoc($result);
+
+			if($plimit['patlimit']<$pcount){
+				header("Location: doctorlist.php?error=all slots booked");
+	    		exit();
+			}
+
 			$sql = "INSERT INTO allapoinments (doctor_name, patient_name, day, date, time, pat_count) VALUES ('$dname','$pname','$day','$date','$time','$pcount')";
 			//echo phpinfo();
 			$result = mysqli_query($conn, $sql);

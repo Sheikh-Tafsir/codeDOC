@@ -39,7 +39,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 		        exit();
 			}
 		}else{
-			header("Location: indexdoc.php?error=Incorect User name or password");
+			header("Location: indexdoc.php?error=iIncorect User name or password");
 	        exit();
 		}
 	}

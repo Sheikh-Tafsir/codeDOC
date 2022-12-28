@@ -24,7 +24,7 @@
 					<p class="error"><?php echo $_GET['error']; ?></p>
 				<?php } ?>
 			</div>
-			<a href="index.php">Already have an account?</a>
+			<a href="indexpat.php">Already have an account?</a>
 			
 		</form>
 	</div>

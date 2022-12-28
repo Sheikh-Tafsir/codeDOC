@@ -7,6 +7,7 @@
 
 body {
 	background-color: #23242a;
+	background: rgb(236, 177, 187);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,6 +26,7 @@ body {
 	width:34vw;
 	height:68vh;
 	background:#1c1c1c ;
+	background: rgb(236, 177, 187);
 	border-radius: 10px;
 	overflow: hidden;
 	transform: scale(0.1);
@@ -73,10 +75,8 @@ body {
 form {
 	position:absolute;
 	inset:2px;
-	/*width: 33vw;
-	height:45vh;*/
-	background:rgba(0,0,0,0.4);
 	background:#28292d;
+	background: rgb(206, 140, 151);
 	border-radius: 10px;
 	text-align: center;
 	z-index: 10;
@@ -104,6 +104,7 @@ form input {
 	margin-bottom:2.5vh;
     padding:15px;
     background:#28292d;
+	background: rgb(236, 177, 187);
     border-bottom: 1px solid #ff3c78;
     outline:none;
 	color:white;

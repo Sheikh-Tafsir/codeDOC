@@ -21,6 +21,7 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['special
     $wed = validate($_POST['wed']);
     $thu = validate($_POST['thu']);
     $fri = validate($_POST['fri']);
+	$patlimit = validate($_POST['patlimit']);
 
 	if (empty($uname)) {
 		header("Location: adddoctoradm.php?error=User Name is required");
@@ -34,6 +35,10 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['special
         header("Location: adddoctoradm.php?error=specialist is required");
 	    exit();
 	}
+	else if(empty($patlimit)){
+        header("Location: adddoctoradm.php?error=patiend check limit is required");
+	    exit();
+	}
 	else{
 		$sql = "SELECT * FROM doctorlist WHERE name='$uname'";
         //$sql = "INSERT INTO users (user_name, password) VALUES ('$uname','$pass') ";
@@ -42,7 +47,7 @@ if (isset($_POST['uname']) && isset($_POST['password']) && isset($_POST['special
 
 		if (mysqli_num_rows($result) === 0) 
         {
-            $sql = "INSERT INTO doctorlist (name, specialist, password, sat, sun, mon, tue, wed, thu, fri) VALUES ('$uname','$specialist','$pass','$sat','$sun','$mon','$tue','$wed','$thu','$fri') ";
+            $sql = "INSERT INTO doctorlist (name, specialist, password, sat, sun, mon, tue, wed, thu, fri, patlimit) VALUES ('$uname','$specialist','$pass','$sat','$sun','$mon','$tue','$wed','$thu','$fri','$patlimit') ";
             $result = mysqli_query($conn, $sql);
 			
             /*$row = mysqli_fetch_assoc($result);

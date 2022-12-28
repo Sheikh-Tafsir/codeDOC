@@ -9,7 +9,22 @@ body{
     margin:0;
     padding:0;
     overflow-x: hidden;
-    font-family: 'Akaya Telivigala';
+}
+
+body {
+    background-image: url("images/appointmentback.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+	
+   
+	/*flex-direction: column;
+	background: url("https://media.gettyimages.com/photos/superhero-picture-id1289851616");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	overflow: hidden;*/
 }
 
 /*header*/
@@ -23,7 +38,6 @@ body{
         padding:1% 0 0 0;
         z-index:1030;
         height:8vh;
-        font-family: 'Akshar';
     }
     .header{
         display:flex;
@@ -34,7 +48,6 @@ body{
         backdrop-filter: blur(4px);
         padding:1% 0 0 0;
         box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-        font-family: 'Akshar';
     }
     .headlogo{
         width:20%;
@@ -62,7 +75,7 @@ body{
         font-size: 1.5rem;
         font-weight:bold;
         padding:0 20px;
-        /*font-family: 'Poppins', sans-serif;*/
+        font-family: 'Poppins', sans-serif;
         letter-spacing: 0.5px;
         position:relative;
     }
@@ -221,87 +234,111 @@ body{
     }
 }
 
-
-
-/*----------------appointmentList------------------*/
-.background{
-    
-}
-.background img{
-    height:100vh;
-    width:100vw;
-    position:fixed;
-    z-index: -1;
-    
-}
-.headline{
-    display:flex;
-    font-size: 1.5rem;
-    margin-bottom:5vh;
-    padding-top:10vh;
-
-}
-.headline .fir{
-    width:45%;
-    text-align:right;
-    color:white;
-}
-.headline .sec{
-    width:55%;
-    color:#ff3c78;
-}
-.apointtable{
-    width:60%;
-    margin:auto;
-    font-size:1.5em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom:5vh;
-}
-.doctorlisttable{
-    width:70%;
-    margin:auto;
-    font-size:1.5em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.doctor-box{
-    display:flex;
-    background-color: rgb(63, 63, 69);
-    background-color: rgb(236, 177, 187);
-    border:2px solid white;
-    color:black;
-    margin-bottom:0.5vh;
-}
-.heading-1{
-    width:38%;
-    margin-left:3%;
-}
-.heading-2{
-    width:32%;
-    margin-left:3%;
-}
-.heading-3{
-    width:30%;
-    margin-left:3%;
+/*-----------------add doctor------------------------*/
+.box{
+	position:relative;
+	width:34vw;
+	height:30vh;
+    top:30vh;
+    left:35vw;
+	background:#1c1c1c ;
+    background: rgb(236, 177, 187);
+	border-radius: 10px;
+	overflow: hidden;
+	
 }
 
-/*-------------------scrollbar------------------------*/
-::-webkit-scrollbar {
-    width: 10px;
+form {
+	position:absolute;
+	inset:2px;
+	/*width: 33vw;
+	height:45vh;*/
+	background:rgba(0,0,0,0.4);
+	background:#28292d;
+    background:rgb(236, 177, 187);
+	border-radius: 10px;
+	text-align: center;
+	z-index: 10;
 }
- 
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    background: transparent;
+
+h2 {
+	margin-top:4vh;
+	text-align: center;
+	margin-bottom: 4vh;
+	color:white;
 }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    
-    background: #fc6c97;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #ff3c78;
-  }
+
+form input {
+	/*border: 2px solid #ccc;
+	width:80%;
+	height:5vh;
+	margin-bottom:2.5vh;
+	text-indent: 10px;
+	outline:none;
+	background-color: transparent;
+	border-bottom: 2px solid #ff3c78;*/
+	border: 0;
+    width:80%;
+	height:2vh;
+    margin-bottom: 1vh;
+    padding:15px;
+    background:transparent;
+    border-bottom: 1px solid #ff3c78;
+    outline:none;
+	color:white;
+}
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
+}
+
+form button {
+	background: #ff3c78;
+	height:5vh;
+	width:80%;
+	color:white;
+	border: none;
+	font-size:1em;
+	font-weight: bold;
+	transition: 0.1s linear;
+	margin-bottom: 1.5vh;
+    margin-top:3vh;
+}
+button:hover{
+	background:#df1f59;
+}
+.errorstat{
+	height:3vh;
+	width:80%;
+	margin:auto;
+	margin-bottom: 2vh;
+}
+.error {
+	color:red;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+/*a {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	opacity: .7;
+}*/
+form a{
+	color:white;
+}
+form a:hover{
+	color:#ff3c78;
+}

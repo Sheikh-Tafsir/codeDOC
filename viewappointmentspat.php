@@ -39,6 +39,7 @@ include "db_conn.php";
                 </div>
                 <div class="headmenu">
                     <a href="#">Appointments</a>
+                    <a href="docupdate.php">Update</a>
                     <a href="dashdoc.php">Profile</a>
                     <button class="logout"><a href="logout.php">Logout</a></button>
                     <i class="fa-solid fa-sun light" onclick="settmode()"></i>

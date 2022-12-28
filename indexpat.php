@@ -7,16 +7,16 @@
 </head>
 <body onload="myFunction()">
 	<div class="box">
-		<form action="logindoc.php" method="post">
-			<h2 >Doctor Login</h2>
+		<form action="login.php" method="post">
+			<h2 >Login Here</h2>
 			
 			<!--<label>User Name</label>-->
-			<input type="text" name="uname" placeholder="User Name" id="#dname"><br>
+			<input type="text" name="uname" placeholder="User Name"><br>
 
 			<!--<label>User Name</label>-->
 			<input type="password" name="password" placeholder="Password"><br>
 
-			<button type="submit" onclick="myFunction2()">Login</button>
+			<button type="submit">Login</button>
 			<div class="errorstat">
 				<?php if (isset($_GET['error'])) { ?>
 					<p class="error"><?php echo $_GET['error']; ?></p>
@@ -24,18 +24,14 @@
 			</div>
 			<a href="signup.php" class="gosignup" onclick="myFunction1()">Don't have an account?</a><br/>
 			<a href="indexadm.php" class="gosignup" style='font-size:0.8em;margin-right:19vw'>Login as Admin?</a>
-			<a href="indexpat.php" class="gosignup" style='font-size:0.8em;'>Login as Patient?</a>
+			<a href="indexdoc.php" class="gosignup" style='font-size:0.8em;'>Login as Doctor?</a>
 		</form>
 	</div>
+
 	<script>
 		function myFunction(){
 			
 			document.querySelector(".box").classList.add("box-tog");
-		}
-		function myFunction2(){
-			
-			$_SESSION['user_name']=document.querySelector("#dname").value;
-			alert($_SESSION['user_name']);
 		}
 		/*function myFunction1(){
 			document.querySelector(".box").classList.remove("box-tog");
